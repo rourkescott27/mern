@@ -34,10 +34,10 @@ const Movie = props => {
   const deleteReview = (reviewId, index) => {
     MovieDataService.deleteReview(reviewId, props.user.id)
       .then(response => {
-        setMovie((prevState) => {
-          prevState.reviews.splice(index, 1)
+        setMovie((currState) => {
+          currState.reviews.splice(index, 1)
           return ({
-            ...prevState
+            ...currState
           })
         });
       })
