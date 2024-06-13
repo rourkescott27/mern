@@ -66,8 +66,7 @@ export default class MoviesDAO {
                     {
                         _id: new ObjectId(id),
                     }
-                }
-                ,
+                },
                 {
                     $lookup:
                     {
@@ -80,7 +79,7 @@ export default class MoviesDAO {
             ]).next();
         }
         catch (e) {
-            console.error(`something went wrong in getMovieById: ${e}`);
+            console.error(`Something went wrong in getMovieById: ${e}`);
             throw e;
         }
     };
