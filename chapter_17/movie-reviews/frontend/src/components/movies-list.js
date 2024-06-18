@@ -83,7 +83,7 @@ const MoviesList = (props) => {
               <Form.Group>
                 <Form.Control
                   type="text"
-                  placeholder="Search by title"
+                  placeholder="Search by Title"
                   value={searchTitle}
                   onChange={onChangeSearchTitle}
                 />
