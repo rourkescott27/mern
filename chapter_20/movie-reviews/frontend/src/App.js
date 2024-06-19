@@ -16,6 +16,7 @@ function App() {
   async function login(user = null) {
     setUser(user);
   };
+
   async function logout() {
     setUser(null);
   };

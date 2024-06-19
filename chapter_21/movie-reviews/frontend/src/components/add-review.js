@@ -4,13 +4,16 @@ import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const AddReview = props => {
+function AddReview(props) {
+
   let editing = false;
   let initialReviewState = "";
+
   if (props.location.state && props.location.state.currentReview) {
     editing = true
     initialReviewState = props.location.state.currentReview.review
   };
+
   const [review, setReview] = useState(initialReviewState);
   const [submitted, setSubmitted] = useState(false);
 
